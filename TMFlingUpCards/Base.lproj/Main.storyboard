@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qa1-vf-I72">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DCM-jL-tT5">
+            <objects>
+                <viewController id="qa1-vf-I72" customClass="ViewController" customModule="TMFlingUpCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0qq-te-drm"/>
+                        <viewControllerLayoutGuide type="bottom" id="aqa-cW-zmh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wFw-qJ-xET">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fling boxes up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAr-D8-4cb">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZF1-bi-efU">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="XWD-KH-kUX"/>
+                                    <constraint firstAttribute="width" constant="255" id="pdA-Vm-5he"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vba-oM-AiA">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="0oJ-S1-iXt"/>
+                                    <constraint firstAttribute="height" constant="295" id="gDp-kL-8j7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNB-mV-miI">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="giN-FN-yMx"/>
+                                    <constraint firstAttribute="height" constant="335" id="rcA-zi-oxo"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Nqy-c4-LLd" appends="YES" id="nbq-nh-LPc"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xAr-D8-4cb" secondAttribute="trailing" constant="20" id="66l-lk-aLO"/>
+                            <constraint firstItem="ZF1-bi-efU" firstAttribute="centerX" secondItem="wFw-qJ-xET" secondAttribute="centerX" id="NkB-kc-syC"/>
+                            <constraint firstItem="xAr-D8-4cb" firstAttribute="top" secondItem="0qq-te-drm" secondAttribute="bottom" constant="29" id="O43-Bb-0IG"/>
+                            <constraint firstItem="kNB-mV-miI" firstAttribute="centerX" secondItem="wFw-qJ-xET" secondAttribute="centerX" id="Q32-yf-YhD"/>
+                            <constraint firstItem="aqa-cW-zmh" firstAttribute="top" secondItem="vba-oM-AiA" secondAttribute="bottom" constant="111" id="U5p-Ou-Lr6"/>
+                            <constraint firstItem="aqa-cW-zmh" firstAttribute="top" secondItem="xAr-D8-4cb" secondAttribute="bottom" constant="456" id="V3r-Nf-At7"/>
+                            <constraint firstItem="aqa-cW-zmh" firstAttribute="top" secondItem="ZF1-bi-efU" secondAttribute="bottom" constant="172" id="gRT-UC-Dix"/>
+                            <constraint firstItem="xAr-D8-4cb" firstAttribute="leading" secondItem="wFw-qJ-xET" secondAttribute="leading" constant="20" id="jUo-cT-RAc"/>
+                            <constraint firstItem="aqa-cW-zmh" firstAttribute="top" secondItem="kNB-mV-miI" secondAttribute="bottom" constant="49" id="kDt-sE-vtY"/>
+                            <constraint firstItem="vba-oM-AiA" firstAttribute="centerX" secondItem="wFw-qJ-xET" secondAttribute="centerX" id="vM1-R5-a01"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="constraintView1Bottom" destination="kDt-sE-vtY" id="6Uo-ka-DEK"/>
+                        <outlet property="constraintView1Height" destination="rcA-zi-oxo" id="Ogy-By-aGu"/>
+                        <outlet property="constraintView1Width" destination="giN-FN-yMx" id="cLA-Te-uub"/>
+                        <outlet property="constraintView2Bottom" destination="U5p-Ou-Lr6" id="ZZ4-Nm-1D3"/>
+                        <outlet property="constraintView2Height" destination="gDp-kL-8j7" id="YHL-so-hfP"/>
+                        <outlet property="constraintView2Width" destination="0oJ-S1-iXt" id="1cO-rT-8w4"/>
+                        <outlet property="constraintView3Bottom" destination="gRT-UC-Dix" id="pyo-Ii-nRB"/>
+                        <outlet property="constraintView3Height" destination="XWD-KH-kUX" id="5Gr-ii-cux"/>
+                        <outlet property="constraintView3Width" destination="pdA-Vm-5he" id="heO-u2-tsv"/>
+                        <outlet property="view1" destination="kNB-mV-miI" id="SL6-4d-dzU"/>
+                        <outlet property="view2" destination="vba-oM-AiA" id="9IZ-MR-vyN"/>
+                        <outlet property="view3" destination="ZF1-bi-efU" id="yvp-Ih-C7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mR9-ZM-YYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Nqy-c4-LLd">
+                    <connections>
+                        <action selector="handlePan:" destination="qa1-vf-I72" id="rtX-BK-Ydq"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2308" y="141"/>
+        </scene>
+    </scenes>
+</document>
